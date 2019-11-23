@@ -1,7 +1,9 @@
 import express, {Request, Response} from 'express'
 import consola from 'consola'
 import config from '../nuxt.config'
-const {Builder, Nuxt} = require('nuxt')
+const {Builder, Nuxt} = require('nuxt') // Works
+// @ts-ignore
+//import {Builder, Nuxt} from 'nuxt' // Works with @ts-ignore
 
 async function start (): Promise<{ port: number, host: string }> {
   const nuxt = new Nuxt(config)
