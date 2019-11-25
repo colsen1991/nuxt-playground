@@ -9,11 +9,10 @@
       "dom"
     ],
     "esModuleInterop": true,
-    "allowJs": true,
     "sourceMap": true,
     "strict": true,
     "noEmit": true,
-    "baseUrl": ".",
+    "baseUrl": "./",
     "paths": {
       "~/*": [
         "./*"
@@ -24,6 +23,6 @@
     }
   },
   "exclude": [
-    "node_modules"
+    "./node_modules"
   ]
 }

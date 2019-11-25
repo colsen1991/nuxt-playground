@@ -1,5 +1,5 @@
 declare module 'nuxt' {
-  import {Configuration} from "@nuxt/types/config";
+  import {Configuration} from "@nuxt/types";
 
   export class Builder {
     constructor (nuxtInstance: Nuxt)
@@ -8,8 +8,8 @@ declare module 'nuxt' {
   }
 
   export class Nuxt {
-    options: Configuration
     constructor (options: Configuration)
+    options: Configuration
     ready (): void
     render (): Function
     [key: string]: any

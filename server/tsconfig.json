@@ -4,6 +4,10 @@
     "module": "commonjs",
     "noEmit": true,
     "strict": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "typeRoots": [
+      "../types"
+    ]
   }
 }
